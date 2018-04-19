@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DeliciousKopi</string>
+    <string name="total_0_00">Total: 0.00</string>
+    <string name="change_prices">Change prices</string>
+    <string name="new_customer">New Customer</string>
+    <string name="kopi_c">Kopi C</string>
+    <string name="dumplings">Dumplings</string>
+    <string name="prices">Prices</string>
+    <string name="kopi">Kopi</string>
+    <string name="ice_kopi">Ice Kopi</string>
+    <string name="kopi_o">Kopi O</string>
+    <string name="hot_tea">Hot Tea</string>
+    <string name="sandwich">Sandwich</string>
+    <string name="dumpling">Dumpling</string>
+    <string name="egg">Egg</string>
+</resources>

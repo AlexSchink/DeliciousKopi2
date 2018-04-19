@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.alexanderschink.deliciouskopi.MainActivity">
+
+    <TextView
+        android:id="@+id/sumText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:text="@string/total_0_00"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="36sp" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:rowCount="3">
+
+
+        <ImageButton
+            android:id="@+id/imageButton0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ice_kopi"
+            android:onClick="imagePressed"
+            android:tag="@integer/int0"
+            app:srcCompat="@drawable/img0" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/kopi_c"
+            android:onClick="imagePressed"
+            android:tag="@integer/int1"
+            app:srcCompat="@drawable/img1" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/hot_tea"
+            android:onClick="imagePressed"
+            android:tag="@integer/int2"
+            app:srcCompat="@drawable/img2" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/sandwich"
+            android:onClick="imagePressed"
+            android:tag="@integer/int3"
+            app:srcCompat="@drawable/img3" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/dumplings"
+            android:onClick="imagePressed"
+            android:tag="@integer/int4"
+            app:srcCompat="@drawable/img4" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/egg"
+            android:onClick="imagePressed"
+            android:tag="@integer/int5"
+            app:srcCompat="@drawable/img5" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/buttonSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="settingsPressed"
+        android:text="@string/change_prices"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/newCust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="newCustPressed"
+        android:text="@string/new_customer"
+        android:textSize="24sp" />
+
+</LinearLayout>

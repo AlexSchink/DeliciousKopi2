@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:text="@string/prices"/>
+
+    <TableLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="73dp"
+        android:weightSum="@integer/int1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_weight="0.2"
+                android:contentDescription="@string/ice_kopi"
+                android:gravity="center"
+                android:text="@string/ice_kopi" />
+
+            <EditText
+                android:id="@+id/price0"
+                android:labelFor="@+id/price0"
+                android:layout_weight="0.3"
+                android:contentDescription="@string/kopi"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:onClick="pressed0" />
+
+
+            <TextView
+                android:layout_weight="0.2"
+                android:contentDescription="@string/kopi_o"
+                android:gravity="center"
+                android:text="@string/kopi_o" />
+
+            <EditText
+                android:id="@+id/price1"
+                android:labelFor="@+id/price1"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:onClick="pressed1"
+                android:inputType="numberDecimal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_weight="0.2"
+                android:contentDescription="@string/hot_tea"
+                android:gravity="center"
+                android:text="@string/hot_tea" />
+
+            <EditText
+                android:id="@+id/price2"
+                android:labelFor="@+id/price2"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:onClick="pressed2"
+                android:inputType="numberDecimal" />
+
+
+            <TextView
+                android:layout_weight="0.2"
+                android:contentDescription="@string/sandwich"
+                android:gravity="center"
+                android:text="@string/sandwich" />
+
+            <EditText
+                android:id="@+id/price3"
+                android:labelFor="@+id/price3"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:onClick="pressed3"
+                android:inputType="numberDecimal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_weight="0.2"
+                android:contentDescription="@string/dumpling"
+                android:gravity="center"
+                android:text="@string/dumpling" />
+
+            <EditText
+                android:id="@+id/price4"
+                android:labelFor="@+id/price4"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:onClick="pressed4"
+                android:inputType="numberDecimal" />
+
+
+            <TextView
+                android:layout_weight="0.2"
+                android:contentDescription="@string/egg"
+                android:gravity="center"
+                android:text="@string/egg" />
+
+            <EditText
+                android:id="@+id/price5"
+                android:labelFor="@+id/price5"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:onClick="pressed5"
+                android:inputType="numberDecimal" />
+        </TableRow>
+
+
+
+    </TableLayout>
+</LinearLayout>
